@@ -1,0 +1,146 @@
+﻿<head>
+  <!--include awesome font-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+  <title>About</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="css/goalProgress.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/goalProgress.min.js"></script>
+
+  <script>
+  /*****************************************************
+                    Display the chart.
+  ******************************************************/
+  var linesData = {
+      labels: ["freshman","","sophomore", ""],
+      datasets: [
+          {
+            fillColor : "rgba(151,187,205,0.5)",
+            strokeColor : "rgba(151,187,205,1)",
+            pointColor : "rgba(151,187,205,1)",
+            pointStrokeColor : "#fff",
+            data : [82,82,92,86]
+          },
+          {
+            fillColor : "rgba(63,221,0,0.5)",
+            strokeColor : "rgba(63,221,0,1)",
+            pointColor : "rgba(63,221,0,1)",
+            pointStrokeColor : "#fff",
+            data : [6,8,3,5]
+          },
+      ]
+  };
+  window.onload = function(){
+      var ctx = document.getElementById("chart-area").getContext("2d");
+      var lineChart = new Chart(ctx).Line(linesData, {
+          responsive : true,
+          animationEasing: "easeOutQuart",
+      });
+  };
+  </script>
+
+  <script>
+  /*****************************************************
+                   On the progress bar.
+  ******************************************************/
+
+  $(document).ready(function(){
+    $('#C_goal').goalProgress({
+        color: "green",
+        goalAmount: 100,
+        currentAmount: 59,
+        textBefore: '',
+        textAfter: 'C'
+    });
+    $('#Java_goal').goalProgress({
+        color: "blue",
+        goalAmount: 100,
+        currentAmount: 65,
+        textBefore: '',
+        textAfter: 'Java'
+    });
+    $('#CSharp_goal').goalProgress({
+        color: "yellow",
+        goalAmount: 100,
+        currentAmount: 71,
+        textBefore: '',
+        textAfter: 'C#'
+    });
+    $('#PHP_goal').goalProgress({
+        color: "pink",
+        goalAmount: 100,
+        currentAmount: 49,
+        textBefore: '',
+        textAfter: 'PHP'
+    });
+    $('#JavaScript_goal').goalProgress({
+        color: "purple",
+        goalAmount: 100,
+        currentAmount: 52,
+        textBefore: '',
+        textAfter: 'JavaScript'
+    });  
+  });
+
+  </script>
+
+</head>
+<body>
+  <div class="main">
+    <div class="aboutMe">
+      <div name="author-title">
+        <div class="banner"></div>
+        <div class="author">
+          <img class="personalImage" src="author.jpg">
+        </div>
+      </div>
+      <hr>
+        <!--article start-->
+        <div class="article">
+            <h1><i class="fa fa-user"></i> 個人簡歷</h1>
+            <table border="1px solid">
+            <tr>
+              <td class="attribute">生日</td><td>1995/7/18</td>
+            </tr>
+            <tr>
+              <td class="attribute">E-mail</td><td>zake7749@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="attribute">編程經驗</td>
+              <td>C、C++、C#、Java</td>
+            </tr>
+            <tr>
+              <td class="attribute">研究領域</td>
+              <td>人工智慧、自然語言處理、機器學習</td>
+            </tr>
+            <tr>
+              <td class="attribute" rowspan="3">求學經歷</td>
+              <td>台南市海佃國民小學</td>
+            </tr>
+              <tr><td>台南市文賢國中</td></tr>
+              <tr><td>國立臺南第一高級中學</td></tr>
+            <tr>
+              <td class="attribute" rowspan="3">實習經驗</td>
+              <td>青年資訊顧問  <a target="_parent" href="http://www.punplace.tw/">@胖地- PunPlace</a></td>
+            </tr>
+            <tr>
+              <td>研究助理  <a target="_parent" href="http://cc.ncku.edu.tw/bin/home.php">@成功大學計算機網路中心</a></td>
+            </tr>
+            </table>
+            <h1><i class="fa fa-bar-chart"></i> 學習歷程</h1>
+              <div class="box">
+                  <h2>Grade & Ranking</h2>
+                  <canvas id="chart-area" class="zone"></canvas>
+              </div>
+              <h2>Skill tree</h2>
+                <div id="C_goal"></div>
+                <div id="Java_goal"></div>
+                <div id="CSharp_goal"></div>
+                <div id="PHP_goal"></div>
+                <div id="JavaScript_goal"></div>
+        </div>
+    </div>
+  </div>
+</body>
