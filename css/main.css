@@ -129,12 +129,17 @@
 
     .Html{
       background: url(https://lh3.googleusercontent.com/eCOuMkULM1nMkJb4h0vR5W5QIJArRfvrWdcv0fq4M8gEwrkS7a31_r7av-BwsbJ1hBXJC5KzDFR3rMTNk0_ywId9ZDNPBpPNnAKqTcWXBe_213PIUgjgxgWvgv8ZBu5YhavheBK8DvJkKtBALrtWTTfs79WcxCSfhNNw78BZdaJjAIQcQYj18heG0CtEBvS6_m_JtcLe7q_p0CYodnWFbQXlBhQbj2xIgx2uVwEusc0NV4ZH7Q6TbnmHLlPdhSJVjod14hBEdaWVTBl5qDf1DDHSeZaZOIVfiD81qLQ3swse0zTxi5AaVkjgVPYrvlSnV8HKm8R0UUXIQPR8LjAjzrp5oSpm8Q5P_bwmbOi8rcYCTUOjN64ctjqhZVoUxDjnw136fhA6armQyDJ4dKk35WD-6P0B5UYjnjwfy7T0cW4x6nAfSTH1geB0WG_ACBXZXyuOh6H_ItpQEwMlUFTzB9cqPeS2R4KmgosBpehIYz6G6ZWUqXGOgflcYFEqxdqiIFrtRs89pb9j9E25Cpil4fVfVRP_NGgJCVWAbh9FQOM=w1009-h618-no);
-      background-size: 100% 100%;
+      background-size: cover;
     }
 
     .Csharp{
       background: url(https://lh3.googleusercontent.com/8aGLXRSy5kLLHAcBmIdAI3GujAnNUK28BaC6WlvEr-at85PskXKJDmMIcvL8XZ3gvWbSVsqY7_76RjOpIfY0jE3c6HOgzoczk8PNS20z33ocNaF-Y3KAR7y77xjjJ-nrZ754BLGjYC4gI1lHwx8VIoMY7HXVtrVDWFCLUawDVAUtcXDQ-NKbSpeLjZ_Uc0wCKlNOjRIJTcu04A8aJfKwJsbDwcoVd3USmFB7Z-B5tTpPx22Yv_I8kqIAo4RxcweOP1EIt0_GJUphouh4QB3dW5OGhlwadRO_acfrQJad_cnTTzysfRNKGae1MDN_p-1qepS_QkArVQaocj_JI_b3THN-X0UtYB2RaRIcvJDIMWxvLkGcg0IHX3tSBvAEwbUaOpleG2YLtyADdfHrBYxa2MrueBdivTRtd4D0ldURhU5gHBZE1nfkKnbBr78zikX-CMH6NjL8gHF_HcQHSw7ECFC8pnYXfpW19tnAGfTkdBVyVNOfmvkYn9oUt_lJlNuTkcpjZEKo2m2xcg7xSxoWIS0yXoYJqNqBRgwqpE1pQ5A=w558-h414-no);
-      background-size: 100% 100%;
+      background-size: cover;
+    }
+
+    .judge{
+      background: url(http://i.imgur.com/IWfFHa6.png);
+      background-size: cover;
     }
     .socialImage{
       font-size: 40px;
@@ -164,8 +169,6 @@
 
 
     .igPreview{
-      padding-top: 1.5em;
-      padding-bottom: 1.5em;
       text-align: center;
       overflow: hidden;
       color: white;
@@ -174,14 +177,13 @@
 
     .igGrid{
       display: inline-block;
-      width: 29%;
-      height: 28%;
-      background-size: contain;
-      border : 4px white solid;
+      width: 45%;
+      height: 45%;
+      border : 6px white solid;
       margin: 8px;
       position: relative;
       box-shadow: 0px 0px 3px #333;
-      border-radius: 5px;
+      border-radius: 3px;
       transition: border-color .5s ease-out;
     }
 
@@ -191,7 +193,6 @@
 
 
     .igDetail{
-      display: none;
       align-items:center;
       justify-content:center;
       font-family: Georgia;
@@ -199,9 +200,10 @@
       float: left;
       font-size: 30px;
       color: white;
-      width: 100%;
+      width: 0%;
       height: 100%;
       overflow: hidden;
+      transition: width .2s ease-out;
     }
 
     .socialfont{

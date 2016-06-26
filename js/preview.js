@@ -1,12 +1,12 @@
-
 function showdetail(itemID){
   var grid = document.getElementById(itemID);
   grid.style.display = "flex";
+  grid.style.width = "100%" ;
 }
 
 function closedetail(itemID){
   var grid = document.getElementById(itemID);
-  grid.style.display = "none";
+  grid.style.width = "0%" ;
 }
 
 function changeBackground(str){
@@ -14,4 +14,3 @@ function changeBackground(str){
   str = "url(img/" + str+ ")";
   cover.style.backgroundImage = str;
 }
-
