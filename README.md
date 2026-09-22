@@ -1,7 +1,7 @@
 # PersonalResume
 
 The 2015 site that used to live here has moved to
-**<https://zake7749.github.io/AboutMe/>**.
+**<https://zake7749.dev/about/>**.
 
 Every page redirects there. GitHub Pages cannot serve a real 301 for a project
 site, so each one is an HTML page carrying a canonical link, a meta refresh and
