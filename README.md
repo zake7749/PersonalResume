@@ -1,7 +1,7 @@
 # PersonalResume
 
 The 2015 site that used to live here has moved to
-**<https://zake7749.github.io/AboutMe/>**.
+**<https://zake7749.dev/about/>**.
 
 This branch is what GitHub Pages serves. Every page redirects: each one is an
 HTML page with a canonical link, a meta refresh and a script that replaces the
